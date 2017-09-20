@@ -1,0 +1,111 @@
+@charset "utf-8";
+@td_width:616px;
+.tod_main{
+	width:@td_width;
+	margin:100px auto;
+}
+.font14(){
+	font-size:14px;
+}
+.font12(){
+	font-size:12px;
+}
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+.title{
+//这样写的目的是方便以后对数值进行修改；
+	@h:62px;
+	@border_color:#d0d0d0;
+	line-height:@h;
+	height:@h;
+	border-top:1px solid @border_color;
+	h3{
+	font-weight:normal;
+	font:22px/@h "微软雅黑";
+	width:106px;
+	border-top:2px solid #f97374;
+	margin-top:-1px;
+	position:relative;//解决IE六的兼容问题；
+	margin-top:-1px;
+	float:left;
+	height:@h - 1;
+	}
+	@color:#c0c0c0;
+	&_nav{
+	.font14();
+	float:right;
+	height:@h;
+	line-height:@h;
+	color:@color;
+	 li{
+	  float:left;
+	  list-style:none;
+	  }
+	  a{
+	    color:@color;
+	    &:hover{
+	    color:red;
+	    }
+	  }
+	  span{
+	  margin:0px 11px;
+	  }
+	}
+}
+
+//内容
+.content{
+	margin-right:-32px;
+}
+.item{
+    float:left;
+    margin-right:32px;
+	@w:130px;
+	@h:164px;
+	@img_h:78px;
+	width:@w;
+	height:@h;
+	a{
+	font-szie:12px;
+	color:#ccc;
+	}
+	  &_img{
+	     margin-bottom:5px;
+         height:@img_h;                  
+         display:block;//去掉图片下面的间距
+         position:relative;
+         img{
+           display:block;
+           width:@w;
+           height:@img_h;
+         }
+         span{
+           width:35px;
+           height:18px;
+           position:absolute;
+           right:0;
+           bottom:0;
+           .font12();
+           color:#fff;
+           text-indent:4px;
+         }
+	   }
+	   .cq{
+	   background:red;
+	   }
+	   .gq{
+	   background:blue;
+	   }
+
+	   &_list{
+	    line-height:22px;
+	    .font12();
+	    .username,.pay,.mess{
+	       padding:17px;
+	    }
+
+	   }
+}
