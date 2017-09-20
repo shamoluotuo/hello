@@ -1,0 +1,127 @@
+*{
+	margin:0px;
+	padding:0px;	
+}
+a{
+	text-decoration: none;
+}
+html{
+	font-family: "微软雅黑"
+}
+.main{
+	background:#eee;
+	width:100%;
+}
+/*.row>div{
+	border:1px solid red;
+}*/
+.theme_img{
+	display:inline-block;	
+	background:#fff;
+    padding:11px;
+	
+}
+.theme_img img{	
+	display: inline-block;
+}
+.mes{
+	border:1px solid #b9b9b9;
+	
+	position:relative;
+		
+}
+.mes .info{
+	margin-top:16px;
+	margin-bottom:16px;
+	margin-left:56px;
+	background:url(img/pho.png) no-repeat 23px center;
+}
+.mes .info p{
+      font-size:14px;
+      line-height: 22px;
+      height:22px;
+}
+.mes .info p span{
+	color:#9c9c9e;
+}
+.btngroup{
+	margin:0px 15px 15px 15px;
+}
+.btngroup a{
+	padding:8px 39px;
+}
+.btngroup a:first-child{
+	margin-right:10px;
+}
+.triangle{
+	border-width:7px;	
+	border-style:dashed dashed solid dashed;
+	width:0px;
+	height:0px;
+	position:absolute;
+	left:27px;
+}
+.mes .bot{	
+	top:-14px;
+	border-color:transparent transparent #bcbcbc transparent;
+	
+	
+
+}
+.mes .top{
+    
+	border-color:transparent transparent #eeeeee transparent;
+	
+	top:-13px;	
+	z-index: 99
+	
+}
+.line{
+	/*width:100%;*/
+	width:0px;
+	height:1px;
+	font-size:0px;
+	background:#e54336;
+	padding:-11px;
+	 -webkit-transition:all 1s linear;
+	transition: all 1s linear;
+}
+.row>div:hover .line{
+     width:100%;
+}
+.row>div{
+	transition: all 1s linear 1s;
+}
+.row>div:hover{
+	transform: scale(1.5);
+	positon:relative;
+	z-index: 99
+}
+.row>div .mes{
+	transition: all 500ms linear 1s;
+}
+.row>div:hover .mes{
+	background:#e54336;
+}
+/*.row>div .info{
+     transition: all 500ms linear 1s;
+}
+.row>div:hover .btn_big{
+	display: block
+}*/
+.btn_big a{
+	padding: 8px 22px;
+}
+.btn_big{
+	padding:15px;
+	display:none;
+}
+.row{
+	margin-bottom:30px;
+}
+.bian{
+	height:1px;
+	background:#7fbb37;
+	width:60px;
+	margin:16px auto;
+}
